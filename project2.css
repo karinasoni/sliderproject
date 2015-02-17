@@ -1,0 +1,33 @@
+.body {
+    color: blue;
+    font-size: 3px;
+}
+.img {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: -100%;
+}
+
+.h2 {
+    color:blue;
+}
+
+.early {
+    color: blue;
+}
+
+.slideshow {
+  width: 80%;
+  max-width: 960px;
+  min-width: 300px;
+  margin: auto;
+  padding: 1em 1em 3em;
+}
+
+.bxslider {
+  margin: 0;
+  padding: 0;
+  li { // slide
+  }
+
+

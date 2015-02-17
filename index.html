@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <html lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="slider/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="slider/jquery.bxslider.css" rel="stylesheet">
+        <!-- own CSS -->
+    <link href="project2.css" rel="stylesheet">
+  </head>
+  <body>
+
+       <h1>Hello, world!</h1>
+<script type="text/javascript">
+ $(document).ready(function() {
+         $('.bxslider').bxSlider({
+              adaptiveHeight: true,
+               infiniteLoop: false,
+              hideControlOnEnd: true,
+              slideMargin: 1,       
+         });       
+});
+ </script>
+  <div class="slideshow">
+    <ul class="bxslider">
+      <li>
+        <div class="imagewrapper">  
+           <img src="img/firstslidegif.gif">
+        </div>
+      </li>
+      <li>
+          <div class="col-md-8">
+            <img src="img/discoslide2.gif">
+          </div>
+          <div class="col-md-4">
+            <h2 class="early">The Disco Revolution</h2>
+                    <p>Disco was a lot more than just a style of music.</p>
+                    <p>For marginalized populations in the early seventies, namely people of color and gays,
+                    the disco lifestyle was an empowering outlet for sexual and personal freedoms. While
+                    white youths were experiencing free love and hippy sensibilites in the sixties, minorities in America
+                    were still fighting for basic civil rights.</p>
+                    <p>Dance music and the club culture of the early discos allowed the oppressed to forget their problems
+                    and indulge in the same freedoms that white youths were already entitled to for over a decade.</p>
+                    <p><b>Early disco music was almost entirely black-owned and black operated and
+                    became extremeley popular WITHOUT the help of commercial radio airplay . </b></p>
+          </div>
+            
+      </li> 
+    </ul>
+</div>
+  </div>
+  </body>
+</html>
