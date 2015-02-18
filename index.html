@@ -17,12 +17,15 @@
     <link href="slider/jquery.bxslider.css" rel="stylesheet">
     <!-- own CSS -->
     <link href="project2.css" rel="stylesheet">
+    <!--questions CSS and JavaScript -->
+    <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
+
 
 
   </head>
   <body>
 
-       <h1>Hello, world!</h1>
+
 <script type="text/javascript">
  $(document).ready(function() {
          $('.bxslider').bxSlider({
@@ -32,6 +35,8 @@
               slideMargin: 1,       
          });       
 });
+ 
+
  </script>
   <div class="slideshow">
     <ul class="bxslider">
@@ -53,7 +58,7 @@
                     were still fighting for basic civil rights.</p>
                     <p>Dance music and the club culture of the early discos allowed the oppressed to forget their problems
                     and indulge in the same freedoms that white youths were already entitled to for over a decade.</p>
-                    <p><b>Early disco music was almost entirely black-owned and black operated and
+                    <p><b>Early disco music
                     became extremeley popular WITHOUT the help of commercial radio airplay . </b></p>
           </div>
       </li>
@@ -110,12 +115,17 @@
         </div>
       </li>
       <li>
-        <div class="col-md-4">
-          <h2>Disco Goes Mainstream</h2>
-          <p>saturday night fever/radio acceptability/rock musicians doing disco</p>
-        </div>
         <div class="col-md-8">
           <img src="img/slide6.png">
+        </div>
+        <div class="col-md-4">
+        <h2>Disco Goes Mainstream</h2>
+        <p>In the late 70's, companies began noticing the commercial viability of disco music. White disco groups
+        such as ABBA, The BeeGees and KC and the Sunshine Band became successful with the help of radio airplay. Mega disco clubs like Studio 54 are able to bring in celebrities and the rich alike.The movie <i>Saturday Night Fever</i> truly
+        pushed dance club culture into the mainstream and grossed over $200 million at the box office. </p>
+        <p>Even though Saturday Night Fever depcited a very gentrified picture of disco, it's popularity helped with the acceptance and normalization
+        of black and gay culture originally entrenched in disco. Gay performers like the Village People and Sylvester were able to gain commercial success in America
+        after disco's commercialization.</p>
         </div>
       </li>
       <li>
@@ -124,17 +134,13 @@
         </div>
         <div class="col-md-4">
           <h2>Death of Disco</h2>
-          <p>disco demolion, "disco" to "dance music"</p>
-        </div>
-      </li>
-      <li>
-        <div class="col-md-8">
-          <img src="img/slide8.png">
-        </div>
-        <div class="col-md-4">
-          <h2>disco around the world</h2>
-          <p>bollywood disco, italo disco</p>
-        </div>
+          <p>At a baseball game between the Chicago White Sox and the Detroit Tigers, a riot happend all in the name of disco.</p>
+          <p>Steve Dahl, a rock-n-roll disc jockey from a local Chicago radio station, planned "Disco Demoliton Night" as a half-time event
+          between two baseball games happening at the stadium. The second game never happened due to the bonfire in the middle of the baseball field caused by the
+          planned explosion of over 10,000 disco records in the stadium. There were over 50,000 people in attendance with close to 40 people were arrested during the event.</p>
+          <p>This event is seen as the beginning of a slow decline of disco music: masses of people began to see the subculture as uncool
+          or cheesy. The final nail in the coffin was the closing of many of the original disco dance clubs due to the AIDS epidemic hitting the gay population in the early
+          80s.</p>
       </li>
       <li>
         <div class="col-md-8">
@@ -142,8 +148,20 @@
         </div>
         <div class="col-md-4">
           <h2>Disco Transendance</h2>
-          
+          <p>Even though the original days of disco may be over, disco music still lives on in many iterations all over the globe.</p>
+          <p>Abroad, Bollywood produced many disco-themed movies with famous Indian composer, Bappi Lahiri. Europe created their own flavor of this dance phenomena with italo disco. </p>
+          <p>At home, many of the same rhythm and styles of disco have been incorporated into house and techno music. </p>
         </div>
+      </li>
+      <li>
+        <div id="quiz"></div>
+          <script src="js/jquery.js" type="text/javascript"></script>
+          <script src="js/tabletop.js" type="text/javascript"></script>
+          <script src="js/script.js" type="text/javascript"></script>
+            
+            <script type="text/javascript">
+                var quiz = jQuery('#quiz').quiz('https://docs.google.com/spreadsheets/d/1hylmdPOdRnaTauTHNKd2EddIx6ZG2lQMMlagWeUBaCw/pubhtml'); //your published spreadsheet key or URL goes here
+            </script>
       </li>
     </ul>
 </div>
