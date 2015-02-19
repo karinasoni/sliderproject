@@ -9,7 +9,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- bxSlider Javascript file -->
     <script src="slider/jquery.bxslider.min.js"></script>
@@ -19,9 +18,23 @@
     <link href="project2.css" rel="stylesheet" type="text/css">
     <!--questions CSS and JavaScript -->
     <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
+    <!--tooltip-->
+    <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <!--tinyscroll-->
+    <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+  
 
+  
+<script>
+        $(document).ready(function() {
+            $('.tooltip').tooltipster();
+        });
+</script>
 
+<style>
 
+</style>
   </head>
   <body>
 
@@ -38,6 +51,7 @@
  
 
  </script>
+
   <div class="slideshow">
     <ul class="bxslider">
       <li>
@@ -46,9 +60,10 @@
         </div>
       </li>
       <li>
-          <div class="col-md-8">
+          <div class="col-md-8" title="TOOLTIPTOOLTOP">
             <img src="img/discoslide2.gif">
           </div>
+          <div class="slide1">
           <div class="col-md-4">
             <h2 class="early">The Disco Revolution</h2>
                     <p>Disco was a lot more than just a style of music.</p>
@@ -59,8 +74,9 @@
                     <p>Dance music and the club culture of the early discos allowed the oppressed to forget their problems
                     and indulge in the same freedoms that white youths were already entitled to for over a decade.</p>
                     <p><b>Early disco music
-                    became extremeley popular WITHOUT the help of commercial radio airplay . </b></p>
+                    became extremeley popular WITHOUT the help of commercial radio airplay. </b></p>
           </div>
+          </div> 
       </li>
       <li>
         <div class="col-md-8">
@@ -70,17 +86,17 @@
           <h2>The Loft</h2>
           <p>
             Unlike most clubs, the Loft was a non-commercial dance venue that served no alcohol, food or beverages.
-            Opened on Valentine's Day 1970 by DJ David Manusco, it quickly became one of the epicenters of gay nightlife in New York City.
+            Opened on Valentine's Day 1970 by DJ David Manusco, it quickly became the epicenter of disco nightlife in New York City.
           </p>
           <p>
             Because the Loft was a private party destination and not a public dance club, police could not habitually raid and arrest
             gay partygoers. Events at the Loft were also equalizing -- there were no cover charges or expensive drinks. Everyone, despite class and
-            background, could attend these events.
+            background, could attend these events. Today, the Loft is seen as the first disco dance club. 
           </p>
           <p>
-            Although beatmatching music together was the norm by most DJs at the time, Manusco instead played tracks the entire way through, with small gaps in between each song.
+            <strong>Although beatmatching music together was the norm by most DJs at the time, Manusco instead played tracks the entire way through, with small gaps in between each song.
             He had an extreme admiration for the disco music played and wanted to enjoy the songs in their entirety. Partygoers enjoyed hearing their favorite sogns on Manusco's soundsytem,
-            regarded as one of the best in it's time. 
+            regarded as one of the best in it's time.</strong> 
           </p>
           
         </div>
@@ -93,6 +109,7 @@
           <p>The club was specifically designed for the on-the-rise DJ, Larry Levan. He became the resident DJ at the club and was known for his legendary "Saturday Night Mass" DJ sets.
           Levan was a daring DJ -- mixing disco with gospel sermons, classic soul and rock music. He consistently surprised people during his night-long DJ sets and kept people dancing for hours.
           </p>
+          <p>Disco music wasn't promoted during this time: since it wasn't played on the radio, people could only here these tracks on the dance floor.</p>
           
         </div>
         <div class="col-md-8">
@@ -106,7 +123,7 @@
         <div class="col-md-12">
           <h2>Birth of the disco 12"</h2>
           <p>Before the birth of disco, vinyl records were exclusively pressed for purchase in either the LP or 7" single format.
-          But with the rise of the DJ, disco clubs and mixing songs, DJ promotional copies of single songs began to be pressed. The 12-inch single
+          But with the rise of DJs like Larry Levan, promotional copies of single songs began to be pressed. The 12-inch single
           format was more desirable to disc jockeys because they were easier to mix with than the other formats. </p>
           <p>In 1976, a small NYC record label called Salsoul decided to hold a contest for the best remix of the song, <i>Ten Percent</i> by Double Exposure.
           DJ Walter Gibbons created a daunting nine-minute rendition of the oringally three-minute long track that stole the show and won the contest. Gibbon's remixed version of the song
@@ -120,8 +137,8 @@
         </div>
         <div class="col-md-4">
         <h2>Disco Goes Mainstream</h2>
-        <p>In the late 70's, companies began noticing the commercial viability of disco music. White disco groups
-        such as ABBA, The BeeGees and KC and the Sunshine Band became successful with the help of radio airplay. Mega disco clubs like Studio 54 are able to bring in celebrities and the rich alike.The movie <i>Saturday Night Fever</i> truly
+        <p>In the late 70's, companies began noticing the commercial viability of disco music. Primarily white disco groups
+        such as ABBA, The BeeGees and KC and the Sunshine Band became successful with the help of radio airplay. Mega disco clubs like Studio 54 attracted celebrities and the glitterati. The movie <i>Saturday Night Fever</i> truly
         pushed dance club culture into the mainstream and grossed over $200 million at the box office. </p>
         <p>Even though Saturday Night Fever depcited a very gentrified picture of disco, it's popularity helped with the acceptance and normalization
         of black and gay culture originally entrenched in disco. Gay performers like the Village People and Sylvester were able to gain commercial success in America
@@ -145,7 +162,7 @@
       </li>
       <li>
         <div class="col-md-8">
-          <img src="img/slide9.png">
+              <img src="img/slide9.png">
         </div>
         <div class="col-md-4">
           <h2>Disco Transendance</h2>
@@ -166,12 +183,5 @@
       </li>
     </ul>
 </div>
-          <div class="row">
-          <div class="media hidden-sm hidden-xs">
-          <center>
-            <h5 class="mediafont">Click for a cool disco playlist.</h5><iframe height="20" src="https://www.cincopa.com/media-platform/iframe.aspx?fid=AoGAqWs8ksIc" frameborder="0" allowfullscreen scrolling="no"></iframe><noscript><span>A Brief Disco History Playlist</span><span>Disco - Evelyn Champagne King - Shame </span><span>Disco - Inner Life - Caught Up (In A One Night Love Affair)</span><span>Disco - Double Exposure - Ten Percent (Walter Gibbon's Mix)</span><span>Disco - Sylvester - You Make Me Feel (Mighty Real)</span><span>Bollywood Disco - Kishore Kumar from the film &quot;Kuhdaar&quot; - Disco 82</span><span>Italo Disco - Savage - Don't Cry Tonight </span><span>House - Jamie Principle - Your Love </span></noscript>
-          </center>
-        </div>
-          </div>
   </body>
 </html>
