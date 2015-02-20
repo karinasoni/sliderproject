@@ -1,6 +1,7 @@
-.body {
-    color: blue;
-    font-size: 3px;
+body {
+    font-family: 'Didact Gothic', sans-serif;
+    color: white;
+
 }
 .img {
       display: inline-block;
@@ -14,7 +15,27 @@
 }
 
 .early {
-    color: silver;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: #ffffff; 
+    }
+    
+.early2 {
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    color: #000000; 
+}
+    
+.early:hover { 
+    color: #FFD700;
+}
+
+.early2:hover {
+    color: #FFd700;
 }
 
 .slideshow {
@@ -49,13 +70,15 @@
 
 }
 
+.slide {
+    position:absolute;
+}
   
-.slide1{
+.slide2{
     background-color: #000000;
     border: 1px solid black;
     opacity: 0.8;
     max-height: 300px;
-    position: absolute;
     bottom: 100px;
     margin-left: 25px;
     margin-right: 25px;
@@ -64,13 +87,85 @@
     color:white;
 }
 
+.slide3 {
+    position: absolute;
+    bottom: 20px;
+    margin-left: 50px;
+    margin-right: 300px;
+    padding-right: 5px;
+    color:white;
+}
+
+.slide4 {
+    margin-right:400px;
+    margin-left:43px;
+}
+
+.slide5 {
+    top:175px;
+    margin-left: 10px;
+    
+}
+
+.slide6 {
+    left: 500px;
+    top: 24px;
+}
+
+.slide7 {
+top: 5px;
+left: 400px;
+background-color: #ffffff;
+border: 1px solid black;
+opacity: .7;
+color: black;
+padding-left: 5px;
+}
+
+.slide8 {
+    top: 175px;
+    margin-right: 350px;
+    margin-left: 50px;
+    padding-left: 5px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: .7;
+    color: black;
+}
+
+.quizstyle {
+    color:black; 
+}
+
+
 @media screen and (max-width: 1000px) {
     
-    .slide1{
+    .slide2{
     position:static;
     background-color: #FFFFFF;
     color:black;
     border: none;
-    margin: 0px 0px 0px 0px
+    margin: 0px 0px 0px 0px;
+    font-size:14px;
+    }
+    
+    .early {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    
+    .slide3{
+    position:static;
+    background-color: #FFFFFF;
+    color:black;
+    border: none;
+    margin: 0px 0px 0px 0px;
+    font-size:14px;
+    }
+    
+    .early {
+    color: black;
     }
 }
