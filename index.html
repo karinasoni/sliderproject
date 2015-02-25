@@ -54,15 +54,11 @@
  <script>
         $(document).ready(function() {
             $('#tooltip1').tooltipster({
-                position: "right",
-                offsetX: -500,
-                positionTracker: true,
                 maxWidth:400, 
                 content: $('<b>Disco was a lifestyle that paved the way for the modern gay and feminist movements we take for granted today.</b>')
             });
             
             $('#tooltip2').tooltipster({
-                position: "left",
                 positionTracker: true,
                 maxWidth: 400, 
                 content: $('<img src="img/hippies.jpg">')
@@ -79,7 +75,72 @@
                 content: $('<a href="http://www.theatlantic.com/politics/archive/2013/01/an-amazing-1969-account-of-the-stonewall-uprising/272467/" target="_blank">The Stonewall Riots in NYC are now considered the single most important event leading to gay liberation in the Unied States.</a>')
             });
             
+            $('#tooltip5').tooltipster({
+                maxWidth:400,
+                content: $('<b>Because the Loft was a private party destination and not a public dance club, police could not habitually raid and arrest gay partygoers.</b>')
+            });
             
+            $('#tooltip6').tooltipster({
+                maxWidth:400,
+                position: "right",
+                content: $('<b>Beatmatching: the act of synchronizing the tempos of two recordings to enable a smooth transition between them in a set of uninterrupted music</b>')
+            });
+            
+            $('#tooltip7').tooltipster({
+                maxWidth:400,
+                content: $('<img src="img/davidm.jpg">')
+            });
+            $('#tooltip8').tooltipster({
+                maxWidth:400,
+                content: $('<b>The Garage was different from other clubs because it could hold over 3,000 people and was the second largest club in New York City in the late seventies.</b>')
+            });
+            
+            $('#tooltip9').tooltipster({
+                maxWidth:400,
+                maxHeight:400,
+                content: $('<img src="img/levan.jpg">')
+            });
+            
+            $('#tooltip10').tooltipster({
+                maxWidth:400,
+                interactive: true,
+                interactiveTolerance: 1000,
+                content: $('<a href="http://www.redbullmusicacademy.com/magazine/larry-levan-feature" target="_blank">Peter Shapiro, author of <i>Turn the Beat Around: The Secret History of Disco</i>, has written a great article on Levan. Check it out!</a>')
+            });
+            
+            $('#tooltip11').tooltipster({
+                maxWidth:400,
+                content: $('<b>The 12-inch single was more desirable to DJs over other records because they were easier to mix.</b>')
+            });
+            
+            $('#tooltip13').tooltipster({
+                maxWidth:400,
+                content: $('<b>Gibbons remixed version of the song later became the first commercially available 12-inch disco single in the world.</b>')
+            });
+            
+            $('#tooltip12').tooltipster({
+                interactive: true,
+                interactiveTolerance: 1000,
+                content: $('<iframe width="420" height="315" src="https://www.youtube.com/embed/tGrKcqcHHcE" frameborder="0" allowfullscreen></iframe>')
+            });
+            
+            $('#tooltip14').tooltipster({
+                maxWidth:400,
+                content: $('<b> White disco groups such as ABBA, The BeeGees and KC and the Sunshine Band became successful with the help of radio airplay.</b>')
+            });
+            
+            $('#tooltip15').tooltipster({
+                maxWidth:400,
+                content: $('<img src="img/eltondiana.jpg"><p color="white">Elton John and Diana Ross</p>')
+            });
+            
+             $('#tooltip16').tooltipster({
+                interactive: true,
+                interactiveTolerance: 1000,
+                content: $('<iframe width="420" height="315" src="https://www.youtube.com/embed/4zQpMnU6N4o?start=2773" frameborder="0" allowfullscreen></iframe>')
+            });
+            
+           
         });
     </script>
  
@@ -95,7 +156,7 @@
           <div class="slide slide2">
           <div class="col-md-4">
             <h2 class="early">The Disco Revolution</h2>
-                    <p id="tooltip1"><u>Disco was a lot more than just a style of music.</u></p>
+                    <p><span id="tooltip1"><u>Disco was a lot more than just a style of music.</u></span></p>
                     <p>For marginalized populations in the early seventies, namely people of color and gays,
                     the disco lifestyle was an empowering outlet for sexual and personal freedoms. While
                     white youths were experiencing free love and <span id="tooltip2"><u>hippy sensibilites</u></span> in the sixties, minorities in America
@@ -114,34 +175,28 @@
         <div class="slide slide3">
           <h2 class="early">The Loft</h2>
           <p>
-            Unlike most clubs, the Loft was a non-commercial dance venue that served no alcohol.
-            Opened on Valentine's Day 1970 by DJ David Manusco, it quickly became the epicenter of disco nightlife in New York City.
+            Unlike most clubs, the Loft was a <span id="tooltip5"><u>non-commercial dance venue</u></span> that served no alcohol.
+            Opened on Valentine's Day 1970 by <span id="tooltip7"><u>DJ David Manusco</u></span>, it quickly became the epicenter of disco nightlife in New York City.
           </p>
           <p>
-            Because the Loft was a private party destination and not a public dance club, police could not habitually raid and arrest
-            gay partygoers.
-          </p>
-          <p>
-            <strong>Although beatmatching music together was the norm by most DJs at the time, Manusco was notorious for playing tracks the entire way through.
+          Although <span id="tooltip6"><u>beatmatching</u></span> music together was the norm by most DJs at the time, Manusco was notorious for playing tracks the entire way through.
             He had an extreme admiration for the disco music played and wanted to enjoy the songs in their entirety. Partygoers enjoyed hearing their favorite sogns on Manusco's soundsytem,
-            regarded as one of the best in it's time.</strong> 
+            regarded as one of the best in it's time.
           </p>
           
         </div>
       </li>
       <li>
+       <div class="col-md-8">
+          <img src="img/slide4.png">
+       </div>
         <div class="slide slide4">
           <h2 class="early">Paradise Garage and Larry Levan</h2>
-          <p>Paradise Garage followed in the footsteps of the Loft: it didn't serve alcohol or food and operated on a membership-only basis to avoid police raids.
-          However, the Garage could hold over 3,000 people and was the second largest club in New York City in the late seventies.</p>
-          <p>The club was specifically designed for the on-the-rise DJ, Larry Levan. He became the resident DJ at the club and was known for his legendary "Saturday Night Mass" DJ sets.
-          Levan was a daring DJ -- mixing disco with gospel sermons, classic soul and rock music. He consistently surprised people during his night-long DJ sets and kept people dancing for hours.
+          <p><span id="tooltip8"><u>Paradise Garage</u></span> followed in the footsteps of the Loft: it didn't serve alcohol or food and operated on a membership-only basis to avoid police raids.
+          <p>The club was specifically designed for the on-the-rise DJ, <span id="tooltip9"><u>Larry Levan</u></span>. He became a fixture at the club and was known for his legendary <span id="tooltip10"><u>"Saturday Night Mass"</u></span> DJ sets.
+           He consistently surprised people during his night-long DJ sets and kept people dancing for hours.
           </p>
-          <p>Disco music wasn't promoted during this time: since it wasn't played on the radio, people could only here these tracks on the dance floor.</p>
           
-        </div>
-        <div class="col-md-8">
-          <img src="img/slide4.png">
         </div>
       </li>
       <li>
@@ -149,13 +204,12 @@
           <img src="img/slide5.png">
         </div>
         <div class="slide slide5">
-          <center><h2 class="early">Birth of the disco 12"</h2></center>
-          <p>Before the birth of disco, vinyl records were exclusively pressed for purchase in either the LP or 7" single format.
-          But with the rise of DJs like Larry Levan, promotional copies of single songs began to be pressed. The 12-inch single
-          format was more desirable to disc jockeys because they were easier to mix with than the other formats. </p>
-          <p>In 1976, a small NYC record label called Salsoul decided to hold a contest for the best remix of the song, <i>Ten Percent</i> by Double Exposure.
-          DJ Walter Gibbons created a daunting nine-minute rendition of the oringally three-minute long track that stole the show and won the contest. Gibbon's remixed version of the song
-          later became the first commercially available 12-inch disco single in the world. At this point, Salsoul, as well as other record labels across the country,
+          <center><h2 class="early">Birth of the Disco Single</h2></center>
+          <p>Before disco, vinyl records were exclusively pressed for purchase in either the LP or 7-inch single format.
+          But with the rise of DJs like Larry Levan, 12-inch <span id="tooltip11"><u>single songs</u></span> began to be pressed. </p>
+          <p>In 1976, a small NYC record label called Salsoul decided to hold a contest for the best remix of the song, <span id="tooltip12"><u><i>Ten Percent</i> by Double Exposure.</u></span>
+          DJ Walter Gibbons created a daunting nine-minute rendition of the oringally three-minute long track that stole the show and <span id="tooltip13"><u>won the contest.</u></span></p>
+          <p>  At this point, Salsoul, as well as other record labels across the country,
           realized the financial benefits of pressing commercially-available remixes. </p>
         </div>
       </li>
@@ -165,11 +219,10 @@
         </div>
         <div class="slide slide6">
         <h2 class="early">Disco Goes Mainstream</h2>
-        <p>In the late 70's, companies began noticing the commercial viability of disco music. Primarily white disco groups
-        such as ABBA, The BeeGees and KC and the Sunshine Band became successful with the help of radio airplay. Mega disco clubs like Studio 54 attracted celebrities and the glitterati. The movie <i>Saturday Night Fever</i> truly
+        <p>In the late 70's, companies began noticing the <span id="tooltip14"><u>commercial viability</u></span> of disco music. Mega disco clubs like Studio 54 attracted <span id="tooltip15"><u>celebrities and the glitterati.</u></span> The movie <i>Saturday Night Fever</i> truly
         pushed dance club culture into the mainstream and grossed over $200 million at the box office. </p>
         <p>Even though Saturday Night Fever depcited a very gentrified picture of disco, it's popularity helped with the acceptance and normalization
-        of black and gay culture originally entrenched in disco. Gay performers like the Village People and Sylvester were able to gain commercial success in America
+        of black and gay culture originally entrenched in disco. Gay performers like the <span id="tooltip16"><u>Village People and Sylvester</u></span> were able to gain commercial success in America
         after disco's commercialization.</p>
         </div>
       </li>
