@@ -9,7 +9,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <!-- bxSlider Javascript file -->
     <script src="slider/jquery.bxslider.min.js"></script>
     <!-- bxSlider CSS file -->
@@ -20,7 +19,7 @@
     <link href="css/style.css" rel="stylesheet" media="screen" type="text/css">
     <!--tooltip-->
     <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/tooltipster.css" />
+    <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
     <!--tinyscroll-->
     <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
     
@@ -35,12 +34,11 @@
         });
 </script>
 
-<style>
 
-</style>
   </head>
   <body>
 
+<script src="js/bootstrap.min.js"></script>
 
 <script type="text/javascript">
  $(document).ready(function() {
@@ -51,10 +49,40 @@
               slideMargin: 1,       
          });       
 });
- 
-
  </script>
 
+ <script>
+        $(document).ready(function() {
+            $('#tooltip1').tooltipster({
+                position: "right",
+                offsetX: -500,
+                positionTracker: true,
+                maxWidth:400, 
+                content: $('<b>Disco was a lifestyle that paved the way for the modern gay and feminist movements we take for granted today.</b>')
+            });
+            
+            $('#tooltip2').tooltipster({
+                position: "left",
+                positionTracker: true,
+                maxWidth: 400, 
+                content: $('<img src="img/hippies.jpg">')
+            });
+            
+            $('#tooltip3').tooltipster({
+                content: $('<b>The only place disco fans COULD hear this music was at parties and clubs.</b>')
+            });
+            
+            $('#tooltip4').tooltipster({
+                interactive: true,
+                interactiveTolerance: 1000,
+                maxWidth:400,
+                content: $('<a href="http://www.theatlantic.com/politics/archive/2013/01/an-amazing-1969-account-of-the-stonewall-uprising/272467/" target="_blank">The Stonewall Riots in NYC are now considered the single most important event leading to gay liberation in the Unied States.</a>')
+            });
+            
+            
+        });
+    </script>
+ 
   <div class="slideshow">
     <ul class="bxslider">
       <li>
@@ -63,21 +91,19 @@
         </div>
       </li>
       <li>
-          <div class="col-md-8" title="TOOLTIPTOOLTOP">
             <img src="img/discoslide2.gif">
-          </div>
           <div class="slide slide2">
           <div class="col-md-4">
             <h2 class="early">The Disco Revolution</h2>
-                    <p>Disco was a lot more than just a style of music.</p>
+                    <p id="tooltip1"><u>Disco was a lot more than just a style of music.</u></p>
                     <p>For marginalized populations in the early seventies, namely people of color and gays,
                     the disco lifestyle was an empowering outlet for sexual and personal freedoms. While
-                    white youths were experiencing free love and hippy sensibilites in the sixties, minorities in America
-                    were still fighting for basic civil rights.</p>
+                    white youths were experiencing free love and <span id="tooltip2"><u>hippy sensibilites</u></span> in the sixties, minorities in America
+                    were still fighting for basic <span id="tooltip4"><u>civil rights.</u></span></p>
                     <p>Dance music and the club culture of the early discos allowed the oppressed to forget their problems
                     and indulge in the same freedoms that white youths were already entitled to for over a decade.</p>
-                    <p><b>Early disco music
-                    became extremeley popular WITHOUT the help of commercial radio airplay. </b></p>
+                    <p id="tooltip3"><u>Early disco music
+                    became extremeley popular WITHOUT the help of commercial radio airplay.</u></p>
           </div>
           </div> 
       </li>
