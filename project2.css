@@ -9,6 +9,14 @@ body {
       margin-right: -100%;
 }
 
+a {
+    color: #ff99c7;
+}
+
+a:hover {
+    color: #f53d3d;
+}
+
 .mediafont {
     color:white;
     font-size: 10px;
@@ -83,6 +91,8 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     color:white;
+    border-radius: 10px;
+
 }
 
 .slide3 {
@@ -92,6 +102,10 @@ body {
     margin-right: 300px;
     padding-right: 5px;
     color:white;
+    background-color: #000000;
+    border: 1px solid black;
+    opacity: 0.7;
+    border-radius: 10px;
 }
 
 .slide4 {
@@ -102,24 +116,38 @@ body {
 }
 
 .slide5 {
-    top:175px;
-    margin-left: 10px;
+    top: 10px;
+    margin-left: 50px;
+    right: 300px;
+    background-color: #000000;
+    border: 1px solid black;
+    opacity: 0.8;
+    border-radius: 10px;
     
 }
 
 .slide6 {
     left: 500px;
     top: 24px;
+    margin-right:50px;
+    background-color: #000000;
+    border: 1px solid black;
+    opacity: 0.8;
+    border-radius: 10px;
+    padding-left:5px;
 }
 
 .slide7 {
-top: 5px;
-left: 400px;
-background-color: #ffffff;
-border: 1px solid black;
-opacity: .7;
-color: black;
-padding-left: 5px;
+    top: 50px;
+    left: 500px;
+    margin-right: 50px;
+    background-color: #000000;
+    border: 1px solid black;
+    opacity: .7;
+    color: white;
+    padding-left: 5px;
+    border-radius: 10px;
+
 }
 
 .slide8 {
@@ -127,10 +155,12 @@ padding-left: 5px;
     margin-right: 350px;
     margin-left: 50px;
     padding-left: 5px;
-    background-color: #ffffff;
+    background-color: #000000;
     border: 1px solid black;
     opacity: .7;
-    color: black;
+    color: white;
+    border-radius: 10px;
+
 }
 
 .quizstyle {
@@ -153,7 +183,14 @@ padding-left: 5px;
         color: black;
     }
     
-
+    .slide5{
+        position: static;
+        background-color: #FFFFFF;
+        color: black;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
     
 }
 
@@ -188,8 +225,36 @@ padding-left: 5px;
     }
 }
 
-@media screen and (max-width: 1195px) {
-    .slide5{
+@media screen and (max-width: 1210px) {
+    .slide6{
+        position: static;
+        background-color: #FFFFFF;
+        color: black;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
+    .early {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .slide7{
+        position: static;
+        background-color: #FFFFFF;
+        color: black;
+        border: none;
+        margin: 0px 0px 0px 0px;
+        font-size: 14px;
+    }
+    .early {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .slide8{
         position: static;
         background-color: #FFFFFF;
         color: black;
