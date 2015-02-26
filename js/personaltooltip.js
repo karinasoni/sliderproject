@@ -18,7 +18,7 @@
                 interactive: true,
                 interactiveTolerance: 1000,
                 maxWidth:400,
-                content: $('<a href="http://www.theatlantic.com/politics/archive/2013/01/an-amazing-1969-account-of-the-stonewall-uprising/272467/" target="_blank">The Stonewall Riots in NYC are now considered the single most important event leading to gay liberation in the Unied States.</a>')
+                content: $('<a href="http://www.theatlantic.com/politics/archive/2013/01/an-amazing-1969-account-of-the-stonewall-uprising/272467/" target="_blank">The Stonewall Riots are now considered the single most important event leading to gay liberation in the Unied States.</a>')
             });
             
             $('#tooltip5').tooltipster({
