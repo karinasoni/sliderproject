@@ -11,7 +11,7 @@
             });
             
             $('#tooltip3').tooltipster({
-                content: $('<b>The only place disco fans COULD hear this music was at parties and clubs.</b>')
+                content: $('<b>The only place disco fans could hear disco music was at parties and clubs.</b>')
             });
             
             $('#tooltip4').tooltipster({
