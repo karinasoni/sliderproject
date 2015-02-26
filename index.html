@@ -22,8 +22,8 @@
     <script type="text/javascript" src="js/jquery.tooltipster.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/tooltipster.css">
     <!--tinyscroll-->
-    <script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
-    
+    <script type="text/javascript" src="js/jquery.tinyscrollbar.min.js"></script>
+    <link href="css/tinyscrollbar.css" rel="stylesheet" rel="stylesheet" type="text/css">
     <!--googlefont-->
     <link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
     <!--favicon-->
@@ -36,6 +36,14 @@
             $('.tooltip').tooltipster();
         });
 </script>
+
+<script type="text/javascript">
+     $(document).ready(function()
+       {
+          var $scrollbar = $("#scrollbar1");
+          $scrollbar.tinyscrollbar();
+            });
+        </script>
 
 
   </head>
@@ -154,7 +162,7 @@
               <img src="img/slide9.png">
         </div>
         <div class="slide slide8">
-          <h2 class="early">Disco Transendance</h2>
+          <h2 class="early">Disco Transendence</h2>
           <p>Even though the original days of disco may be over, disco music still lives on in many iterations all over the globe.</p>
           <p>Abroad, Bollywood produced many disco-themed movies with famous Indian composer, <span id="tooltip21"><u>Bappi Lahiri.</u></span> Europe created their own flavor of this dance phenomena with <span id="tooltip22"><u>italo disco.</u></span> </p>
           <p>At home, many of the same rhythm and styles of disco have been incorporated into <span id="tooltip23"><u>house</u></span>
@@ -162,18 +170,21 @@
         </div>
       </li>
       <li>
-        <div class="quizstyle">
-        <div id="quiz"></div>
-          <script src="js/jquery.js" type="text/javascript"></script>
-          <script src="js/tabletop.js" type="text/javascript"></script>
-          <script src="js/script.js" type="text/javascript"></script>
+          <div class="quizstyle">
+          <div id="quiz"></div>
+            <script src="js/tabletop.js" type="text/javascript"></script>
+            <script src="js/script.js" type="text/javascript"></script>
             
             <script type="text/javascript">
                 var quiz = jQuery('#quiz').quiz('https://docs.google.com/spreadsheets/d/1hylmdPOdRnaTauTHNKd2EddIx6ZG2lQMMlagWeUBaCw/pubhtml'); //your published spreadsheet key or URL goes here
             </script>
-         </div>   
+        </div>
       </li>
     </ul>
-</div>
+
+ <center><p class="sources">
+    Sources: <a href="https://www.youtube.com/watch?v=4zQpMnU6N4o" target="_blank">BBC's documentary, <i>The Joy of Disco, </i></a><a href="http://www.redbullmusicacademy.com/magazine/larry-levan-feature" target="_blank">Saturday Night Mass,</a><a href="http://www.theguardian.com/music/2012/feb/26/disco-changed-world-for-ever" target="_blank">The Guardian,</a>
+    <a href="http://dangerousminds.net/comments/disco_sucks_relive_the_madness_of_disco_demolition_night" target="_blank">Dangerous Minds,</a> and an interview with <a href="http://www.redbullmusicacademy.com/magazine/new-york-stories-david-mancuso" target="_blank">David Manusco.</a>
+  </p></center>
   </body>
 </html>
